@@ -1,0 +1,126 @@
+{
+    "gyms": [
+        {
+            "id": 1,
+            "address": "Tysens Lane 413",
+            "description": "The biggest of our gyms covering a whopping 280 metres squared. You will find the latest and most unique gym equipment in this place, so definitely check it out if you're into modern stuff and trying out new things!",
+            "thumbnail": "/photos/gyms/tysens/thumbnail.jpg",
+            "photos": [
+                "/photos/gyms/tysens/1.jpg",
+                "/photos/gyms/tysens/3.jpg",
+                "/photos/gyms/tysens/2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "address": "Mallory Avenue 178",
+            "description": "A small and cozy spot hidden from the uninitiated eyes. Living somewhere near? Come on in and check out if this is what you need!",
+            "thumbnail": "/photos/mallory/thumbnail.jpg",
+            "photos": [
+                "/photos/gyms/mallory/1.jpg",
+                "/photos/gyms/mallory/3.jpg",
+                "/photos/gyms/mallory/2.jpg"
+            ]
+        }
+    ],
+    "trainers": [
+        {
+            "id": 1,
+            "name": "Jack Beltran",
+            "description": "Jack is one of the most experienced trainers in this area. You can certainly count on his expertise!",
+            "thumbnail": "/photos/trainers/beltran/thumbnail.jpg",
+            "photos": [
+                "/photos/trainers/beltran/1.jpg",
+                "/photos/trainers/beltran/3.jpg",
+                "/photos/trainers/beltran/2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Eric Scruggs",
+            "description": "Eric a young trainer specialized for empower exercises. He is more than happy to help you during your journey!",
+            "thumbnail": "/photos/trainers/scruggs/thumbnail.jpg",
+            "photos": [
+                "/photos/trainers/scruggs/1.jpg",
+                "/photos/trainers/scruggs/3.jpg",
+                "/photos/trainers/scruggs/2.jpg"
+            ]
+        }
+    ],
+    "trainings": [
+        {
+            "id": 1,
+            "name": "Body weight",
+            "description": "Body weight shoulder presses is a gym work out exercise that targets shoulders and also involves chest. Refer to the illustration and instructions above for how to perform this exercise correctly. Rear delt machine flyes, wall angles and water bottle squat thrusters are related exercise that target the same muscle groups as body weight shoulder presses.",
+            "time": "2020-05-02 07:00",
+            "duration": 45,
+            "capacity": 15,
+            "freePlaces": 5,
+            "full": false,
+            "trainer": {
+                "id": 2,
+                "name": "Eric Scruggs",
+                "thumbnail": "/photos/trainers/scruggs/thumbnail.jpg"
+            },
+            "gym": {
+                "id": 2,
+                "address": "Tysens Lane 413",
+                "thumbnail": "/photos/tysens/thumbnail.jpg"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Cardio",
+            "description": "When you realize just how much cardio exercise can do for you, you may want to do some right now. There are very few activities you can do for a short period of time that have this many benefits.",
+            "time": "2020-05-02 09:00",
+            "duration": 30,
+            "capacity": 15,
+            "freePlaces": 0,
+            "full": true,
+            "trainer": {
+                "id": 1,
+                "name": "Jack Beltran",
+                "thumbnail": "/photos/trainers/beltran/thumbnail.jpg"
+            },
+            "gym": {
+                "id": 2,
+                "address": "Mallory Avenue 178",
+                "thumbnail": "/photos/mallory/thumbnail.jpg"
+            }
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Timber",
+            "lastName": "Saw",
+            "dateOfBirth": "1975-08-19",
+            "email": "timber@saw.com",
+            "registeredAt": "2020-04-30 22:21:38",
+            "admin": false,
+            "trainings": [
+                {
+                    "id": 2,
+                    "name": "Cardio",
+                    "time": "2020-05-02 09:00"
+                }
+            ]
+        }
+    ],
+    "registrations": [
+        {
+            "id": 1,
+            "createdAt": "2020-05-01 18:16:21",
+            "training": {
+                "id": 2,
+                "name": "Cardio",
+                "time": "2020-05-02 09:00"
+            },
+            "user": {
+                "id": 1,
+                "firstName": "Timber",
+                "lastName": "Saw"
+            }
+        }
+    ]
+}
